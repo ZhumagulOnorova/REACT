@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./style.css"
 
-const Button = ({children, color, borderRadius}) => {
-   
+const Button = ({children, color,backgroundColor}) => {
+    const [bgColor, setBgColor] =useState('')
+
+    const handleClick=(color)=>{
+        setBgColor(color)
+        document.body.style.backgroundColor=color}
     return (
+
         <button
+            onClick={()=>handleClick(color)}
             style={{
                 color,
-                borderRadius
+                backgroundColor,
+                bgColor:color
             }}
         >
             {children}
@@ -15,4 +22,4 @@ const Button = ({children, color, borderRadius}) => {
     );
 };
 
-export default Button;
+export default Button

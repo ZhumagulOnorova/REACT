@@ -1,19 +1,18 @@
 import React from 'react';
 import Button from './components/Button';
 const App = () => {
-  
   return (
     <div>
-      <Button color='purple'>Purple</Button>
-      <Button color="violet">Violet</Button>
-      <Button color="blue">Blue</Button>
-      <Button color="pink">Pink</Button>
-      <Button color="red">Red</Button>
-      <Button color="orange">Orange</Button>
-      <Button color="yellow">Yellow</Button>
-      <Button color="green">Green</Button>
-      <Button color="indigo">Indigo</Button>
-      <Button color="lime">Lim</Button>
+      <Button backgroundColor='blue' color='purple'>Purple</Button>
+      <Button backgroundColor="pink" color="violet">Violet</Button>
+      <Button backgroundColor='red' color="blue">Blue</Button>
+      <Button backgroundColor='orange' color="black">Black</Button>
+      <Button backgroundColor='yellow' color="red">Red</Button>
+      <Button backgroundColor='green' color="orange">Orange</Button>
+      <Button backgroundColor='indigo' color="yellow">Yellow</Button>
+      <Button backgroundColor='magenta' color="green">Green</Button>
+      <Button backgroundColor='purple' color="cyan">Cyan</Button>
+      <Button backgroundColor='violet' color="lime">Lime</Button>
   
 
     </div>
